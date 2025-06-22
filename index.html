@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ONE SHOP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ONE SHOP</h1>
+    <div id="announcement" style="background:#fffae6; padding:10px; margin-bottom:15px; border-radius:5px;"></div>
+
+    <h2>สินค้าแนะนำ</h2>
+    <div id="recommended" style="display:flex; gap:15px; flex-wrap: wrap;"></div>
+
+    <h2>สินค้าอื่นๆ</h2>
+    <div id="product-list" style="display:flex; gap:15px; flex-wrap: wrap;"></div>
+
+    <div class="topup" style="margin-top:30px;">
+      <h2>เติมเงิน</h2>
+      <input type="text" id="slip" placeholder="ลิงก์สลิป TrueWallet" />
+      <input type="number" id="amount" placeholder="จำนวนเงิน" />
+      <button onclick="topup()">ยืนยันการเติม</button>
+    </div>
+
+    <button style="margin-top:20px;" onclick="logout()">ออกจากระบบ</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
